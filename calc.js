@@ -17,6 +17,7 @@ botonNumeros.forEach(function(boton){
 botonOpera.forEach(function(boton){
     boton.addEventListener('click',function(){
         selectOperacion(boton.innerText);
+       // alert(boton.innerText);
     })
 });
 
@@ -53,7 +54,7 @@ function calcular(){
         case '-':
             calculo=anterior-actual;
             break;
-        case 'x':
+        case '*':
             calculo=anterior*actual;
             break;
         case '/':
